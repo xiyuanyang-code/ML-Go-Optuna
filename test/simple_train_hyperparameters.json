@@ -1,0 +1,29 @@
+{
+  "hyperparameter": {
+    "learning_rate": {
+      "type": "float",
+      "upperbound": 0.1,
+      "lowerbound": 0.001,
+      "log": true,
+      "default": 0.01,
+      "description": "Learning rate for the optimizer"
+    },
+    "batch_size": {
+      "type": "categorical",
+      "space": [16, 32, 64],
+      "default": 32,
+      "description": "Batch size for training"
+    },
+    "epochs": {
+      "type": "int",
+      "upperbound": 20,
+      "lowerbound": 5,
+      "default": 10,
+      "description": "Number of training epochs"
+    }
+  },
+  "metadata": {
+    "description": "Hyperparameter configuration for simple training test",
+    "version": "1.0"
+  }
+}

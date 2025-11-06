@@ -1,0 +1,23 @@
+{
+    "hyperparameter": {
+        "batch_size": {
+            "type": "int",
+            "upperbound": 64,
+            "lowerbound": 1,
+            "step": 2,
+            "default": 1,
+            "is_flag": false,
+            "description": "Batch size while doing model training"
+        },
+        "device": {
+            "type": "str",
+            "space": [
+                "cpu",
+                "cuda"
+            ],
+            "default": "cpu",
+            "is_flag": false,
+            "description": "Devices for model training"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "hyperparameter": {
+    "n_components": {
+      "type": "int",
+      "upperbound": 50,
+      "lowerbound": 2,
+      "step": 1,
+      "default": 10,
+      "is_flag": false,
+      "description": "Number of principal components to retain after dimensionality reduction"
+    },
+    "whiten": {
+      "type": "bool",
+      "space": [
+        true,
+        false
+      ],
+      "default": false,
+      "is_flag": false,
+      "description": "Whether to apply whitening to de-correlate the components"
+    },
+    "svd_solver": {
+      "type": "categorical",
+      "space": [
+        "auto",
+        "full",
+        "arpack",
+        "randomized"
+      ],
+      "default": "auto",
+      "is_flag": false,
+      "description": "PCA SVD solver method for computing principal components"
+    },
+    "tol": {
+      "type": "float",
+      "upperbound": 0.01,
+      "lowerbound": 0.0001,
+      "default": 0.001,
+      "is_flag": false,
+      "description": "Tolerance for convergence in PCA computation"
+    }
+  },
+  "metadata": {
+    "experiment_name": "pca_dimensionality_reduction",
+    "description": "Hyperparameter optimization for PCA to find optimal number of components and settings",
+    "objective": "maximize_classification_accuracy",
+    "dataset": "mock_classification_data.csv",
+    "model_type": "pca_randomforest_pipeline",
+    "version": "1.0"
+  }
+}
