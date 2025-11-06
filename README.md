@@ -1,4 +1,4 @@
-# Optuna Optimizer for ML-Go
+# ML-Go Optuna
 
 ## Introduction
 
