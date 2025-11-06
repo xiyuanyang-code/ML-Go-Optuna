@@ -15,12 +15,18 @@ Optuna 框架为了希望模型在探索新的未知策略可以在**充分探�
 
 ### Optuna Logger
 
+分析训练的日志和相关数据，进行数据分析计算更深层次的指标等等
+
 ### Optuna Introspector
+
+根据 Tuner 得到的超参数优化的原始数据和 Logger 部分得到的其他指标，利用模型 (deepseek-r1) 生成详细的分析报告。
 
 ## Todo List
 
-- [ ] Finish Optuna Logger
-- [ ] Finish Optuna Introspector
-
+- [x] Finish Optuna Logger
+- [x] Finish Optuna Introspector
+- Optimize the prompt and strict the model's response format.
+- Integrate this module into one **single exploitation-reflection pipeline**
+    - Integrate that pipeline into MCTS
 
 
